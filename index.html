@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="images/favicon-sm.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/187dbbd4c6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              class="img"
+              src="images/380523611_352453753923127_8627233658960394992_n.png"
+            />
+          </a>
+        </div>
+        <ul class="links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <a href="#" class="action_btn"></a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars faBar"></i>
+        </div>
+      </div>
+
+      <div class="dropdown_menu">
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </div>
+
+      <nav class="dropmenu">
+        <div class="container">
+          <div class="boxOne">
+            <span class="buttonA"
+              ><a href="freshmix.html">Listen to Fresh Mix</a></span
+            ><img class="freshImg" src="images/freshImg.jpg" />
+          </div>
+          <div class="boxTwo">
+            <span class="buttonB" id="listenToHouse"
+              ><a href="housemix.html">Listen to House Mix</a></span
+            ><img class="houseImg" src="images/houseImg.jpg" />
+          </div>
+          <div class="boxThree">
+            <span class="buttonC"
+              ><a href="rapmix.html">Listen to Rap Mix</a></span
+            ><img class="rapImg" src="images/rapImg.jpg" />
+          </div>
+        </div>
+      </nav>
+      
+    </header>
+    <div class="box">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+      };
+    </script>
+  </body>
+</html>

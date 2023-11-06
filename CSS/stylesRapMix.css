@@ -1,0 +1,661 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Red Hat Display'
+}
+body {
+    height: 100vh;
+    
+    
+}
+.container .backgroundImg {
+    width: 100%;
+    height: 50.3rem;
+    object-fit: cover;
+    -webkit-filter: blur(15px); /* Safari 6.0 - 9.0 */
+  filter: blur(4.5px);
+  
+  
+
+  
+
+    
+    
+   
+
+    /* add flexboc style*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    flex-flow: wrap;
+}
+
+
+
+
+
+
+.logo {
+    width: 1rem;
+}
+.img {
+    max-width: 1800%;
+    margin-top: 0.2rem;
+    margin-left: 0.5em;
+}
+
+li {
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 1.5rem;
+    transition: color 0.5s;
+    font-family: 'Red Hat Display';
+}
+
+a:hover {
+    color: rgb(83, 99, 145);
+    transition: color 0.5s;
+}
+/* HEADER */
+header {
+    position: relative;
+    padding: 0 0rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 150px;
+    max-width: 100%;
+    margin: 0% auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #101B30;
+}
+
+.navbar .links  {
+    display: flex;
+    gap: 1.5rem;
+    margin-right: -100rem;
+    margin-top: -1rem;
+}
+
+.navbar .toggle_btn {
+    color: rgb(58, 81, 143);
+    font-size: 1.5 rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+.toggle_btn {
+    background-color: rgb(39, 51, 99);
+    color: #cbcbcb;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    margin-bottom: 5.5rem;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: #3f3ea1;
+    transition:0.5s;
+}
+.toggle_btn:hover {
+    scale: 1.05;
+    color: #3f3ea1;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+.toggle_btn:active {
+    scale: 0.95;
+}
+
+/* DROPDOWN MENU */
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 200px;
+    background: rgba(46, 65, 141, 0.1);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.13s cubic-bezier(1, 0, 0, 1)
+}
+
+.dropdown_menu.open {
+    height:90px;
+}
+
+.dropdown_menu li {
+    padding: .4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    font-family: Comfortaa;
+}
+
+
+
+:root {
+    --bgColor: #1e0f2f;
+    --mainColor: #4b5bf1;
+    --secondColor: #f6277e;
+    --txtColor: #B1A1BF;
+    --whiteColor: #f5f5f5;
+}
+.musicplayer {
+    width: 30rem;
+    height: 40.45rem;
+    background: radial-gradient(rgb(253, 156, 0), rgb(189, 72, 0), rgb(184, 46, 0));
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 550px; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 999; 
+    box-shadow: rgba(254, 113, 25, 0.987) 0px 1px 15px;
+}
+.songCover {
+    width: 20rem;
+    
+}
+.songCover img {
+    width: 100%;
+    border-radius: 1rem;
+}
+.songInfo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .8rem;
+}
+.songName {
+    color: black;
+    font-size: 2.2rem;
+    font-family: 'Red Hat Display';
+}
+.songSinger {
+    color: black;
+    font-size: 1.6rem;
+    font-family: 'Red Hat Display';
+}
+.progressContainer {
+    width: 75%;
+    height: .2rem;
+    border-radius: 1rem;
+    background-color: rgba(21, 92, 118, 0.995)
+}
+
+
+
+
+.controlButton {
+    width: 3rem; height: 3rem;
+    border-radius: 50%;
+    background-color: #36274a;
+    cursor: pointer;
+    color: var(--whiteColor);
+    transition: .5s;
+    font-size: 1.2rem;
+}
+.playSong {
+    width: 6.5rem; height: 6.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playSong_Colored{
+    width: 6.5rem; height: 6.5rem;
+    background: linear-gradient(to bottom, rgb(255, 140, 0) 1%, rgb(83, 10, 0));
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: playing .5s liner infinite paused;
+}
+.playSong_wrapper{
+    width: 80%; height: 80%;
+    background: var(--bgColor);
+    border-radius: 50%;
+    transition: .5s;
+}
+.playSong:hover .playSong_wrapper{background-color: transparent;}
+
+.playSongIcon{
+    position: absolute;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box ul li {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    list-style: none;
+    opacity: 0;
+    background:radial-gradient(deepskyblue,transparent,transparent);
+    bottom: 0;
+    left: 10vw;
+    animation: animate 15s linear infinite;
+}
+.box ul li:nth-child(2) {
+    left: 20%;
+    animation-delay: 2s;
+}
+.box ul li:nth-child(3) {
+    left: 68%;
+    animation-delay: 2.8s;
+}
+.box ul li:nth-child(4) {
+    left: 50%;
+    animation-delay: 3.3s;
+}
+.box ul li:nth-child(5) {
+    left: 32%;
+    animation-delay: 4s;
+}
+.box ul li:nth-child(6) {
+    left: 5%;
+    animation-delay: 4.7s;
+}
+.box ul li:nth-child(7) {
+    left: 89%;
+    animation-delay: 5.5s;
+}
+.box ul li:nth-child(8) {
+    left: 69%;
+    animation-delay: 6.5s;
+}
+.box ul li:nth-child(9) {
+    left: 12%;
+    animation-delay: 7.2s;
+}
+.box ul li:nth-child(10) {
+    left: 45%;
+    animation-delay: 8s;
+}
+.box ul li:nth-child(11) {
+    left: 75%;
+    animation-delay: 8.8s;
+}
+.box ul li:nth-child(12) {
+    left: 53%;
+    animation-delay: 9.6s;
+}
+.box ul li:nth-child(13) {
+    left: 20%;
+    animation-delay: 10.4s;
+}
+.box ul li:nth-child(14) {
+    left: 72%;
+    animation-delay: 11.2s;
+}
+.box ul li:nth-child(15) {
+    left: 90%;
+    animation-delay: 12;
+}
+.box ul li:nth-child(16) {
+    left: 54%;
+    animation-delay: 13s;
+}
+.box ul li:nth-child(17) {
+    left: 3%;
+    animation-delay: 13.8s;
+}
+.box ul li:nth-child(18) {
+    left: 92%;
+    animation-delay: 14.6s;
+}
+.box ul li:nth-child(19) {
+    left: 6%;
+    animation-delay: 15.6s;
+}
+.box ul li:nth-child(20) {
+    left: 10%;
+    animation-delay: 16.6s;
+}
+.box ul li:nth-child(21) {
+    left: 66%;
+    animation-delay: 17.4s;
+}
+.box ul li:nth-child(22) {
+    left: 35%;
+    animation-delay: 18.2s;
+}
+.box ul li:nth-child(23) {
+    left: 81%;
+    animation-delay: 19s;
+}
+.box ul li:nth-child(24) {
+    left: 27%;
+    animation-delay: 19.8s;
+}
+.box ul li:nth-child(25) {
+    left: 6%;
+    animation-delay: 20.5s;
+}
+.box ul li:nth-child(26) {
+    left: 92%;
+    animation-delay: 21.5s;
+}
+.box ul li:nth-child(27) {
+    left: 50%;
+    animation-delay: 22.2s;
+}
+.box ul li:nth-child(28) {
+    left: 78%;
+    animation-delay: 23s;
+}
+.box ul li:nth-child(29) {
+    left: 30%;
+    animation-delay: 23.8s;
+}
+.box ul li:nth-child(30) {
+    left: 15%;
+    animation-delay: 25s;
+}
+.box ul li:nth-child(31) {
+    left: 12%;
+    animation-delay: 25.8s;
+}
+.box ul li:nth-child(32) {
+    left: 49%;
+    animation-delay: 26.8s;
+}
+.box ul li:nth-child(33) {
+    left: 68%;
+    animation-delay: 27.4s;
+}
+.box ul li:nth-child(34) {
+    left: 93%;
+    animation-delay: 29s;
+}
+
+@keyframes animate {
+    0%{
+        transform: scale(0.7);
+        opacity: 1;
+        bottom: 0;
+    }
+    100% {
+        opacity: 1;
+        bottom: 100vh;
+    }
+}
+
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1810px) {
+    .navbar .links,
+    .navbar .action_btn
+    {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+@media (max-width: 576px) {
+    .img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 5000%
+    }
+    .box ul li {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        list-style: none;
+        opacity: 1;
+        background:radial-gradient(deepskyblue,transparent,transparent);
+        bottom: 0;
+        left: 10%;
+        animation: animate 15s linear infinite;
+        margin-bottom: -30px;
+    }
+    .box ul li:nth-child(2) {
+        left: 20%;
+        animation-delay: 2s;
+    }
+    .box ul li:nth-child(3) {
+        left: 68%;
+        animation-delay: 2.8s;
+    }
+    .box ul li:nth-child(4) {
+        left: 50%;
+        animation-delay: 3.3s;
+    }
+    .box ul li:nth-child(5) {
+        left: 32%;
+        animation-delay: 4s;
+    }
+    .box ul li:nth-child(6) {
+        left: 5%;
+        animation-delay: 4.7s;
+    }
+    .box ul li:nth-child(7) {
+        left: 50%;
+        animation-delay: 5.5s;
+    }
+    .box ul li:nth-child(8) {
+        left: 69%;
+        animation-delay: 6.5s;
+    }
+    .box ul li:nth-child(9) {
+        left: 12%;
+        animation-delay: 7.2s;
+    }
+    .box ul li:nth-child(10) {
+        left: 45%;
+        animation-delay: 8s;
+    }
+    .box ul li:nth-child(11) {
+        left: 75%;
+        animation-delay: 8.8s;
+    }
+    .box ul li:nth-child(12) {
+        left: 53%;
+        animation-delay: 9.6s;
+    }
+    .box ul li:nth-child(13) {
+        left: 20%;
+        animation-delay: 10.4s;
+    }
+    .box ul li:nth-child(14) {
+        left: 72%;
+        animation-delay: 11.2s;
+    }
+    .box ul li:nth-child(15) {
+        left: 80%;
+        animation-delay: 12;
+    }
+    .box ul li:nth-child(16) {
+        left: 54%;
+        animation-delay: 13s;
+    }
+    .box ul li:nth-child(17) {
+        left: 3%;
+        animation-delay: 13.8s;
+    }
+    .box ul li:nth-child(18) {
+        left: 71%;
+        animation-delay: 14.6s;
+    }
+    .box ul li:nth-child(19) {
+        left: 6%;
+        animation-delay: 15.6s;
+    }
+    .box ul li:nth-child(20) {
+        left: 10%;
+        animation-delay: 16.6s;
+    }
+    .box ul li:nth-child(21) {
+        left: 66%;
+        animation-delay: 17.4s;
+    }
+    .box ul li:nth-child(22) {
+        left: 35%;
+        animation-delay: 18.2s;
+    }
+    .box ul li:nth-child(23) {
+        left: 65%;
+        animation-delay: 19s;
+    }
+    .box ul li:nth-child(24) {
+        left: 27%;
+        animation-delay: 19.8s;
+    }
+    .box ul li:nth-child(25) {
+        left: 6%;
+        animation-delay: 20.5s;
+    }
+    .box ul li:nth-child(26) {
+        left: 80%;
+        animation-delay: 21.5s;
+    }
+    .box ul li:nth-child(27) {
+        left: 50%;
+        animation-delay: 22.2s;
+    }
+    .box ul li:nth-child(28) {
+        left: 78%;
+        animation-delay: 23s;
+    }
+    .box ul li:nth-child(29) {
+        left: 30%;
+        animation-delay: 23.8s;
+    }
+    .box ul li:nth-child(30) {
+        left: 15%;
+        animation-delay: 25s;
+    }
+    .box ul li:nth-child(31) {
+        left: 12%;
+        animation-delay: 25.8s;
+    }
+    .box ul li:nth-child(32) {
+        left: 49%;
+        animation-delay: 26.8s;
+    }
+    .box ul li:nth-child(33) {
+        left: 68%;
+        animation-delay: 27.4s;
+    }
+    .box ul li:nth-child(34) {
+        left: 78%;
+        animation-delay: 29s;
+    }
+}
+
+@media (max-width: 576px) {
+    .musicplayer {
+        width: 80%;
+        height: 60%;
+        background: radial-gradient(rgb(253, 156, 0), rgb(189, 72, 0), rgb(184, 46, 0));
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 500px; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        z-index: 999; 
+        box-shadow: rgba(254, 113, 25, 0.987) 0px 1px 15px;
+    }
+    .songCover {
+        width: 50%;
+        
+    }
+}
+
+
+
+
